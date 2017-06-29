@@ -31,10 +31,10 @@ object SparkContextFactory {
   def newSparkContext: SparkContext = {
 
     val sparkConf = new SparkConf()
-      .setJars(Array(SparkContext.jarOfClass(this.getClass).get))
+      // .setJars(Array(SparkContext.jarOfClass(this.getClass).get))
       .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
       .set("spark.scheduler.mode", "FAIR")
 
-    new SparkContext("yarn-client", "TestSparkJettyServer", sparkConf)
+    new SparkContext("local[2]", "TestSparkJettyServer", sparkConf)
   }
 }

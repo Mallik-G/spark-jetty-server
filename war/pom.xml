@@ -41,7 +41,7 @@ limitations under the License.
       <groupId>org.calrissian.spark</groupId>
       <artifactId>services</artifactId>
       <version>${project.version}</version>
-      <scope>provided</scope>
+      <!--<scope>provided</scope>-->
     </dependency>
 
     <dependency>
