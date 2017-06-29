@@ -6,7 +6,7 @@ far, this has only been tested using the Jetty maven plugin, but it should trans
 
 Originally forked from [calrissian/spark-jetty-server](https://github.com/calrissian/spark-jetty-server), this no more needs any classpath setup like ```SPARK_HOME```, ```HADOOP_HOME``` etc. I've modified the original project to build a fat jar using maven shaded plugin in order to include all needed dependencies in the final jar.
 
-Hence, running this project is now much more simplified without the need for the user to worry about setup's. Just download and run as shown below.
+#### Hence, running this project is now much more simplified - Just do mvn build and run!! (no need for the user to worry about setup's and managing classpath's. Just download and run as shown below).
 
 ## Building and running
 
