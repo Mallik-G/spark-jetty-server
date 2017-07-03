@@ -6,9 +6,9 @@ This is a simple example demonstrating how to embed a ```SparkContext``` within 
 ![image](https://user-images.githubusercontent.com/22542670/27729358-3131ade2-5da3-11e7-8bc0-5ff0d6ec4fa5.png)
 
 ## Improvised
-THis project is originally forked from [calrissian/spark-jetty-server](https://github.com/calrissian/spark-jetty-server). I've modified it in 2 aspects:
-1. Updated this to run with Spark 2.1.x 
-2. **Simplified project setup** - It needed classpath setup like ```SPARK_HOME```, ```HADOOP_HOME``` etc and tweak ```externalClasspath``` property in maven pom file to point to the dependent jars. I've modified it and removed all such dependencies. 
+This project is originally forked from [calrissian/spark-jetty-server](https://github.com/calrissian/spark-jetty-server). My contributions majorly is concentrated on below two chunks with an end goal of turning it into a plug-and-play from a laborious error-prone huge setup process:
+1. **Simplified project setup** - It needed classpath setup like ```SPARK_HOME```, ```HADOOP_HOME``` etc and tweak ```externalClasspath``` property in maven pom file to point to the dependent jars. I've modified it and removed all such dependencies. 
+2. Upgraded to latest [ApacheSpark 2.1.x](#apachespark) 
 
 #### Hence, running this project is now much more simplified - Just do mvn build and run!!
 
