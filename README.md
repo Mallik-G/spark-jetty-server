@@ -8,7 +8,7 @@ This is a simple example demonstrating how to embed a ```SparkContext``` within 
 ## Improvised
 This project is originally forked from [calrissian/spark-jetty-server](https://github.com/calrissian/spark-jetty-server). My contributions majorly is concentrated on below two chunks with an end goal of turning it into a plug-and-play from a laborious error-prone huge setup process:
 1. **Simplified project setup** - It needed classpath setup like ```SPARK_HOME```, ```HADOOP_HOME``` etc and tweak ```externalClasspath``` property in maven pom file to point to the dependent jars. I've modified it and removed all such dependencies. 
-2. Upgraded to latest [ApacheSpark 2.1.x](#apachespark) 
+2. Upgraded to latest [ApacheSpark 2.1.x](#spark) 
 
 #### Hence, running this project is now much more simplified - Just do mvn build and run!!
 
